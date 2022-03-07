@@ -210,3 +210,12 @@ const toArray = (...args) => {
 };
 
 console.log(toArray(45, 78, 'word', false));
+
+/** Async */
+setTimeout( () => {
+  console.log("----------------*******Async*******--------------");
+  console.log('Timer is done!');
+}, 2000);
+console.log("----------------*******Async*******--------------");
+console.log("Hello");
+console.log("Hii");

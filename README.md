@@ -20,6 +20,7 @@ TABLE OF CONTENT:
 13. Named and Default Exports
 14. For loop for Array
 15. The rest operator
+16. Async code and promise ( code in play.js)
 
 ## Getting Started with Create React App
 
