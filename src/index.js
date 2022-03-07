@@ -56,6 +56,7 @@ dog.bark(); // return the dog object
 const cat = {
   miao() {
     setTimeout(function() {
+      console.log('***Arrow Function and this****' );
       console.log('this', this); // this callback function is a standalone funtion
     }, 100); 
   }
@@ -66,6 +67,7 @@ const fish = {
   swim(){
     let self = this;
     setTimeout(function() {
+      console.log('***Arrow Function and this****' );
       console.log('this', self); // this callback function is a standalone funtion
     }, 100); 
   }
@@ -75,6 +77,7 @@ fish.swim(); // return the fish object
 const snake = {
   bite(){
     setTimeout( () => {
+      console.log('***Arrow Function and this****' );
       console.log('this', this );
      }, 100 );
   }
@@ -88,8 +91,8 @@ const colors = ['red', 'green', 'blue'];
 const items = colors.map( color => `<li>${color}</li>`);
 console.log(items);
 
-/** Object destructing */
-console.log("**** Object destructing *****");
+/** Object and Array destructing */
+console.log("**** Object and Array destructing *****");
 const address = {
   street: 'Briawood Drive',
   city: 'Ann Arbor',
@@ -98,6 +101,20 @@ const address = {
 
 const { street : myst, city : mycity } = address;
 console.log( myst + ', ' + mycity  );
+
+const man = {
+  name: 'Max',
+  age: 29,
+  id: '001'
+};
+const printMan = ({ name }) => {
+  console.log(name);
+};
+printMan(man);
+
+const birds = ['Robin', 'Woodpecker'];
+const [bird1, bird2] = birds;
+console.log(bird1, bird2);
 
 /** Spred Operator */
 console.log("**** Spred Operator *****");
@@ -178,3 +195,18 @@ console.log("*******Named and Default Exports********");
 // Named -->  import { ... } from '';
 // Default --> impor ... from '';
 promote();
+
+/** For loop for Array */
+console.log("*******For loop for Array********");
+const hobbies = ['Sports', 'Cooking'];
+for( let hobby of hobbies){
+  console.log(hobby);
+}
+
+/** The rest operator */
+console.log("*******The rest operator********");
+const toArray = (...args) => {
+  return args;
+};
+
+console.log(toArray(45, 78, 'word', false));

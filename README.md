@@ -1,7 +1,7 @@
-# Code from ES6 Tutorial: Learn Modern JavaScript in 1 Hour
+# Code Notes from ES6 Tutorial and NodeJS Refresher course
 
-Youtube [link](https://www.youtube.com/watch?v=NCwa_xi0Uuc&t=817s)
-Main code in index.js, person.js and teacher.js
+Youtube [Learn Modern JavaScript in 1 Hour](https://www.youtube.com/watch?v=NCwa_xi0Uuc&t=817s)
+Code in index.js, person.js and teacher.js
 
 TABLE OF CONTENT: 
 
@@ -12,12 +12,14 @@ TABLE OF CONTENT:
 5. Arrow Functions
 6. Arrow Functions and this
 7. Array.map Method
-8. Object Destructuring
+8. Object and Array Destructuring
 9. Spread Operator
 10. Classes
 11. Inheritance 
 12. Modules
 13. Named and Default Exports
+14. For loop for Array
+15. The rest operator
 
 ## Getting Started with Create React App
 
